@@ -9,7 +9,7 @@ import fr.diginamic.exemple.exceptions.CodeDeptNullException;
 public class RechercherPopulationDeptServices {
 
 	
-	public int rechercher(String codeDept){
+	public int rechercher(String codeDept) throws Exception{
 		
 		RechercherPopulationVillesDao dao = new RechercherPopulationVillesDao();
 		try {

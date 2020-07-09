@@ -1,10 +1,17 @@
 package fr.diginamic.exemple;
 
+import fr.diginamic.exemple.daos.RechercherPopulationVillesDao;
+
 public class Application {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		RechercherPopulationVillesDao dao = new RechercherPopulationVillesDao();
+		
+		try {
+			dao.extraireVilles("34");
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
